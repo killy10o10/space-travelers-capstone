@@ -1,12 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
+import logo from '../assets/planet.png';
 
 const Navbar = () => (
   <header>
     <nav>
       <div className="navbar">
-        <h1>SPACE TRAVELORS</h1>
+        <h1 className="logo">
+          <img src={logo} alt="logo" />
+          Space Travelers&apos; Hub
+        </h1>
         <div>
           <ul className="list">
             <li>
