@@ -1,5 +1,5 @@
 import React from 'react';
-import Rocket from '../components/Rocket';
+import Rocket from '../components/Rockets';
 
 export default function Rocketspage() {
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Missionpage from "./pages/Missionpage";
@@ -8,11 +9,13 @@ import Rocketspage from "./pages/Rocketspage";
 const App = () => (
   <>
     <Navbar />
-    <Routes>
-      <Route path="/" element={<Rocketspage />} />
-      <Route path="/mission" element={<Missionpage />} />
-      <Route path="/profile" element={<Myprofilepage />} />
-    </Routes>
+    <div className="main">
+      <Routes>
+        <Route path="/Rockets" element={<Rocketspage />} />
+        <Route path="/Missions" element={<Missionpage />} />
+        <Route path="/Myprofile" element={<Myprofilepage />} />
+      </Routes>
+    </div>
   </>
 );
 

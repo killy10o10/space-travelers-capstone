@@ -14,14 +14,29 @@ const Navbar = () => (
         <div>
           <ul className="list">
             <li>
-              <NavLink to="/">Rockets</NavLink>
+              <NavLink
+                to="/Rockets"
+                className={({ isActive }) => (isActive ? 'active-link' : 'link')}
+              >
+                Rockets
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/mission">Missions</NavLink>
+              <NavLink
+                to="/Missions"
+                className={({ isActive }) => (isActive ? 'active-link' : 'link')}
+              >
+                Missions
+              </NavLink>
             </li>
             <hr />
             <li>
-              <NavLink to="/profile">My Profile</NavLink>
+              <NavLink
+                to="/Myprofile"
+                className={({ isActive }) => (isActive ? 'active-link' : 'link')}
+              >
+                My Profile
+              </NavLink>
             </li>
           </ul>
         </div>
