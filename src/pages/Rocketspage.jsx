@@ -1,8 +1,8 @@
 import React from 'react';
-import Rocket from '../components/Rocket';
+import RocketsList from '../components/RocketsList';
 
 export default function Rocketspage() {
   return (
-    <Rocket />
+    <RocketsList />
   );
 }
