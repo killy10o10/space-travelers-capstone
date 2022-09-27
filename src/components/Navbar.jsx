@@ -7,10 +7,12 @@ const Navbar = () => (
   <header>
     <nav>
       <div className="navbar">
-        <h1 className="logo">
-          <img src={logo} alt="logo" />
-          Space Travelers&apos; Hub
-        </h1>
+        <NavLink to="/">
+          <h1 className="logo">
+            <img src={logo} alt="logo" />
+            Space Travelers&apos; Hub
+          </h1>
+        </NavLink>
         <div>
           <ul className="list">
             <li>
