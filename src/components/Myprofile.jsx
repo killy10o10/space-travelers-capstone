@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Myprofile() {
+export default function Myprofile(props) {
   return (
-    <div>Myprofile</div>
+    <div>{props.name}</div>
 
   );
 }
