@@ -1,8 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Space Travelers Capstone
-
->  
+>  This is a webapp which uses real live data from the SpaceX API. It is an application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 ## Built With
 
