@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import uuid from "react-uuid";
 import { showMission } from "../Redux/mission/Mission";
 import Missions from "./Missions";
 import "./missionlist.css";
@@ -25,11 +26,11 @@ const Missionslist = () => {
       </div>
       {missionArray.map((data) => (
         <Missions
-          key={data.id}
+          key={uuid()}
           name={data.mission_name}
           discription={data.description}
-          status="Not A Member"
           id={data.mission_id}
+          reserved={data.reserved}
         />
       ))}
     </div>
