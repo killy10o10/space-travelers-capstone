@@ -47,9 +47,9 @@ const missionReducer = (state = initialState, action) => {
       };
     case SHOW_STATUS:
       return {
-        missionArray: state.missionArray.map((mission) => (mission.mission_id !== action.payload
-          ? mission
-          : { ...mission, reserved: true })),
+        missionArray: state.missionArray.map((mission) => (mission.mission_id === action.payload
+          ? { ...mission, reserved: true }
+          : mission)),
       };
     case LEAVE_MISSIONS:
       return {

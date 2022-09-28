@@ -9,7 +9,7 @@ const Missionslist = () => {
   const dispatch = useDispatch();
   const { missionArray } = useSelector((state) => state.mission);
   useEffect(() => {
-    dispatch(showMission());
+    if (missionArray.length === 0) dispatch(showMission());
   }, []);
   return (
     <div>
@@ -30,7 +30,7 @@ const Missionslist = () => {
           name={data.mission_name}
           discription={data.description}
           id={data.mission_id}
-          reserved={data.reserved}
+          reserved={data.reserved !== false}
         />
       ))}
     </div>
