@@ -13,7 +13,7 @@ hr {
 }
 
 .mission-list:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #f5f4f4;
 }
 
 .list-h {
@@ -44,10 +44,11 @@ hr {
 }
 
 .btn {
-  margin: 30px;
+  margin: 40px;
   padding: 2px;
   height: 30px;
   font-size: 17px;
   background-color: #fff;
   border: 0.5px solid rgb(174, 170, 170);
+  cursor: pointer;
 }
