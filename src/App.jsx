@@ -13,6 +13,7 @@ const App = () => (
     <Provider store={store}>
       <Routes>
         <Route path="/" element={<Rocketspage />} />
+        <Route path="/Rocket" element={<Rocketspage />} />
         <Route path="/mission" element={<Missionpage />} />
         <Route path="/profile" element={<Myprofilepage />} />
       </Routes>

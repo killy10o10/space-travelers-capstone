@@ -4,20 +4,19 @@ import { showRockets } from "../Redux/rockets/Rockets";
 import Rocket from "./Rocket";
 
 const RocketsList = () => {
+  const rocketsArray = useSelector((state) => state.rocket);
   const dispatch = useDispatch();
-  const { rocketsArray } = useSelector((state) => state.rocket);
   useEffect(() => {
-    dispatch(showRockets());
+    if (rocketsArray.length === 0) {
+      dispatch(showRockets());
+    }
   }, []);
   return (
     <div>
       {rocketsArray.slice(1).map((data) => (
         <Rocket
           key={data.id}
-          name={data.rocket_name}
-          image={data.flickr_images}
-          description={data.description}
-          id={data.id}
+          rocket={data}
         />
       ))}
     </div>
