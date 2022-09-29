@@ -1,27 +1,33 @@
 .profile-content {
-  width: 40%;
-  padding: 40px;
-  margin-top: 5rem;
-  margin-left: 25rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  border: 1px solid rgb(183, 177, 177);
+  align-items: center;
+  height: 50vh;
 }
 
-.profile-content section {
-  width: 60%;
-  border: 1px solid rgb(180, 176, 176);
+.heading {
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-.profile-content section h1 {
-  border: 1px solid rgb(180, 176, 176);
+section {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  width: 80%;
+  border: #eee 1px solid;
 }
 
-table {
-  margin-top: 10px !important;
+.reserved-table {
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-td {
-  font-size: 24px;
-  border-bottom: 1px solid rgb(180, 176, 176);
+.reserved-table li {
+  padding: 10px;
+  border: #eee 1px solid;
+  width: 100%;
 }
