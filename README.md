@@ -14,10 +14,12 @@
 ## Live Demo
 
 - [App Live Link]()
-- [Video Demo]()
 
-## Screenshot
-![Screenshot]()
+## Screenshots
+![Rocket](./src/assets/Rockets.png)
+![Missions](./src/assets/Missions.png)
+![Profile](./src/assets/profile.png)
+
 
 ## Getting Started
 

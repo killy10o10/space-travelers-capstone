@@ -1,7 +1,6 @@
 import React from "react";
 import "./myprofile.css";
 import { useSelector } from "react-redux";
-import Table from "react-bootstrap/Table";
 
 export default function Myprofile() {
   const reservedRockets = useSelector((state) => state.rocket.filter((item) => item.reserved));
@@ -13,28 +12,20 @@ export default function Myprofile() {
   return (
     <div className="profile-content">
       <section className="reserved-rockets">
-        <h1>My Rockets</h1>
-        <Table bordered>
-          <tbody>
-            {reservedRockets.map((rocket) => (
-              <tr key={rocket.id}>
-                <td>{rocket.name}</td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
+        <h1 className="heading">My Rockets</h1>
+        {reservedRockets.map((rocket) => (
+          <ul key={rocket.id} className="reserved-table">
+            <li>{rocket.name}</li>
+          </ul>
+        ))}
       </section>
       <section>
-        <h1>My Missions</h1>
-        <Table bordered>
-          <tbody>
-            {reservedMission.map((mission) => (
-              <tr key={mission.id}>
-                <td>{mission.mission_name}</td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
+        <h1 className="heading">My Missions</h1>
+        {reservedMission.map((mission) => (
+          <ul key={mission.id} className="reserved-table">
+            <li>{mission.mission_name}</li>
+          </ul>
+        ))}
       </section>
     </div>
   );

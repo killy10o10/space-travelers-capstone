@@ -28,6 +28,7 @@ ul {
   gap: 2rem;
   margin-right: 4rem;
   list-style: none;
+  color: #2166ba;
 }
 
 ul hr {
@@ -39,10 +40,10 @@ ul hr {
 }
 
 .active-link {
-  color: #007bff;
   text-decoration: underline;
+  color: #138adf;
 }
 
 .link {
-  color: grey;
+  text-decoration: none;
 }
