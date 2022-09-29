@@ -10,9 +10,7 @@ exports[`This is a test to check the My Profile page 1`] = `
     <h1>
       My Rockets
     </h1>
-    <table
-      bordered={true}
-    >
+    <table>
       <tbody>
         <tr>
           <td>
@@ -26,9 +24,7 @@ exports[`This is a test to check the My Profile page 1`] = `
     <h1>
       My Missions
     </h1>
-    <table
-      bordered={true}
-    >
+    <table>
       <tbody>
         <tr>
           <td>

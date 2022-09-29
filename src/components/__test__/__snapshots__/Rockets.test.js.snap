@@ -15,11 +15,12 @@ exports[`A tests for my Rockets component Check whether Rockets component render
   <div
     className="details"
   >
-    <h1 />
+    <h1>
+      rockes
+    </h1>
     <p />
     <button
       className="reserve button"
-      onClick={[Function]}
       type="button"
     >
       Reserve Rocket
@@ -43,11 +44,12 @@ exports[`A tests for my Rockets component We now check whether it renders the ro
   <div
     className="details"
   >
-    <h1 />
+    <h1>
+      rockes
+    </h1>
     <p />
     <button
       className="reserve button"
-      onClick={[Function]}
       type="button"
     >
       Reserve Rocket
