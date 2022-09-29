@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`This is a test to check the My Profile page 1`] = `
+<div
+  className="profile-content"
+>
+  <section
+    className="reserved-rockets"
+  >
+    <h1>
+      My Rockets
+    </h1>
+    <table
+      bordered={true}
+    >
+      <tbody>
+        <tr>
+          <td>
+            rocket
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h1>
+      My Missions
+    </h1>
+    <table
+      bordered={true}
+    >
+      <tbody>
+        <tr>
+          <td>
+            mission
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+`;
