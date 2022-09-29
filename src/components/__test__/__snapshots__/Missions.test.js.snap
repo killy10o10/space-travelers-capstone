@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A tests for my missions component Check whether mission component renders 1`] = `
+<div
+  className="mission-list"
+>
+  <div
+    className="list"
+  >
+    <div
+      className="list-h"
+    >
+      <h1>
+        Thaicom
+      </h1>
+    </div>
+    <hr />
+    <div
+      className="list-p"
+    >
+      <p />
+    </div>
+    <hr />
+    <div
+      className="list-s"
+    >
+      <h3
+        style={
+          {
+            "backgroundColor": "rgb(19, 138, 223)",
+          }
+        }
+      >
+        Active member
+      </h3>
+    </div>
+    <hr />
+    <button
+      className="btn"
+      style={
+        {
+          "border": "1px solid red",
+          "color": "red",
+        }
+      }
+      type="button"
+    >
+      Leave Mission
+    </button>
+  </div>
+  <hr />
+</div>
+`;
