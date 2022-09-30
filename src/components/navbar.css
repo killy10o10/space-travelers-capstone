@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #5c5858;
   height: 4rem;
   align-items: center;
   box-shadow: 0 0 5px 0 rgb(96, 92, 92);
@@ -17,10 +17,12 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  color: rgb(244, 252, 252);
 }
 
 .logo img {
   height: 100%;
+  color: rgb(244, 252, 252);
 }
 
 ul {
@@ -28,7 +30,7 @@ ul {
   gap: 2rem;
   margin-right: 4rem;
   list-style: none;
-  color: #2166ba;
+  color: #9ac1f2;
 }
 
 ul hr {

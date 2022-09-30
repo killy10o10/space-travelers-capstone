@@ -13,7 +13,7 @@ const RocketsList = () => {
   }, []);
   return (
     <div>
-      {rocketsArray.slice(1).map((data) => (
+      {rocketsArray.map((data) => (
         <Rocket
           key={data.id}
           rocket={data}

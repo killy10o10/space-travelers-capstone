@@ -4,9 +4,7 @@ import { useSelector } from "react-redux";
 
 export default function Myprofile() {
   const reservedRockets = useSelector((state) => state.rocket.filter((item) => item.reserved));
-  console.log(reservedRockets);
   const reservedMission = useSelector((state) => state.mission).filter((item) => item.reserved);
-  console.log(reservedMission);
 
   return (
     <div className="profile-content">

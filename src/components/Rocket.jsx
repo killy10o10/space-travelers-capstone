@@ -17,12 +17,29 @@ export default function Rocket(props) {
   return (
     <section className="rockets-section">
       <div className="">
-        <img src={rocket.image} alt={rocket.name} />
+        <img
+          src={
+            rocket.image.length === 2
+              ? "https://farm1.staticflickr.com/745/32394687645_a9c54a34ef_b.jpg"
+              : rocket.image
+          }
+          alt={rocket.name}
+        />
       </div>
       <div className="details">
-        <h1>{rocket.name}</h1>
-        <p>
+        <h1
+          style={{
+            zIndex: "1",
+          }}
+        >
           {rocket.reserved && <small className="reserve">Reserved</small>}
+          {rocket.name}
+        </h1>
+        <p
+          style={{
+            zIndex: "1",
+          }}
+        >
           {rocket.description}
         </p>
         {!rocket.reserved && (

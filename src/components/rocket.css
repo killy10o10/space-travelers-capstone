@@ -3,34 +3,48 @@
   display: grid;
   align-items: center;
   grid-template-columns: 0.4fr 1fr;
-  margin: 10px;
+  margin: 0;
   padding: 10px;
+  background-color: #5c5858;
+  width: 94rem;
+  overflow: hidden;
 }
 
 .rockets-section img {
-  width: 75%;
-  border-radius: 4px;
-  padding: 10px;
+  width: 95rem;
+  height: 40rem;
+  opacity: 0.4;
 }
 
 .details {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1rem;
+  z-index: 1;
+  width: 80%;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 8rem;
+  color: azure;
+  line-height: 5rem;
 }
 
 .button {
-  padding: 15px;
+  padding: 45px 520px 45px 520px;
   display: flex;
   align-items: center;
   border-radius: 5px;
   color: #fff;
-  height: 2.8rem;
+  height: 3.8rem;
   border: none;
-  width: fit-content;
-  margin: 0;
+
+  /* width: 100vh; */
+  margin-top: 12rem;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 small {

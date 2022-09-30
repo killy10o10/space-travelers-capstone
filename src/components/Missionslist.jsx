@@ -7,13 +7,14 @@ import "./missionlist.css";
 
 const Missionslist = () => {
   const missionArray = useSelector((state) => state.mission);
+  console.log(missionArray);
   const dispatch = useDispatch();
   useEffect(() => {
     if (missionArray.length === 0) dispatch(showMission());
   }, []);
   return (
     <div>
-      <div>
+      <div className="missions">
         <ul className="list-mission">
           <li className="list-m1">Missions</li>
           <hr />

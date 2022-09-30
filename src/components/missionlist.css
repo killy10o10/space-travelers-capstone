@@ -1,16 +1,24 @@
+.list-mission {
+  background-color: #5c5858;
+  width: 100%;
+  border: 0.1px solid rgb(183, 179, 179);
+}
+
 .list-m1 {
   font-size: 24px;
   width: 7.6%;
   margin-left: 2rem;
   font-weight: 800;
   padding: 4px;
+  background-color: #5c5858;
 }
 
 .list-m2 {
-  width: 52.3%;
+  width: 49.8%;
   font-size: 24px;
   height: auto;
   font-weight: 800;
+  background-color: #5c5858;
 }
 
 .list-m3 {
@@ -18,15 +26,19 @@
   font-size: 24px;
   font-weight: 500;
   font-weight: 800;
+  background-color: #5c5858;
 }
 
 hr {
   /* margin-top: -.5rem; */
-  padding-top: 0.5rem;
+
+  /* padding-top: 0.5rem; */
+  background-color: #5c5858;
 }
 
 .list-mission hr {
   margin-top: 0;
   width: 0.1px;
+  background-color: #5c5858;
   border: 0.1px solid rgb(183, 179, 179);
 }
