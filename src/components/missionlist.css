@@ -1,0 +1,32 @@
+.list-m1 {
+  font-size: 24px;
+  width: 7.6%;
+  margin-left: 2rem;
+  font-weight: 800;
+  padding: 4px;
+}
+
+.list-m2 {
+  width: 52.3%;
+  font-size: 24px;
+  height: auto;
+  font-weight: 800;
+}
+
+.list-m3 {
+  padding: 2px 67px 0 2px;
+  font-size: 24px;
+  font-weight: 500;
+  font-weight: 800;
+}
+
+hr {
+  /* margin-top: -.5rem; */
+  padding-top: 0.5rem;
+}
+
+.list-mission hr {
+  margin-top: 0;
+  width: 0.1px;
+  border: 0.1px solid rgb(183, 179, 179);
+}

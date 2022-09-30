@@ -1,0 +1,33 @@
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.heading {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  width: 80%;
+  border: #eee 1px solid;
+}
+
+.reserved-table {
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reserved-table li {
+  padding: 10px;
+  border: #eee 1px solid;
+  width: 100%;
+}

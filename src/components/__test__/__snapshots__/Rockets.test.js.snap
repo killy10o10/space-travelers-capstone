@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A tests for my Rockets component Check whether Rockets component renders 1`] = `
+<section
+  className="rockets-section"
+>
+  <div
+    className=""
+  >
+    <img
+      alt=""
+      src=""
+    />
+  </div>
+  <div
+    className="details"
+  >
+    <h1>
+      rockes
+    </h1>
+    <p />
+    <button
+      className="reserve button"
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</section>
+`;
+
+exports[`A tests for my Rockets component We now check whether it renders the rockets correctly 1`] = `
+<section
+  className="rockets-section"
+>
+  <div
+    className=""
+  >
+    <img
+      alt=""
+      src=""
+    />
+  </div>
+  <div
+    className="details"
+  >
+    <h1>
+      rockes
+    </h1>
+    <p />
+    <button
+      className="reserve button"
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</section>
+`;

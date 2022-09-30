@@ -1,0 +1,57 @@
+.rockets-section {
+  font-size: 18px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.4fr 1fr;
+  margin: 10px;
+  padding: 10px;
+}
+
+.rockets-section img {
+  width: 75%;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: #fff;
+  height: 2.8rem;
+  border: none;
+  width: fit-content;
+  margin: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+small {
+  padding-inline: 10px;
+  margin-inline: 10px;
+}
+
+.reserve {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.cancel {
+  border: 1px red solid;
+  background-color: transparent;
+  color: #dc3545;
+}
+
+.cancel:hover {
+  background-color: #dc3545;
+  color: #fff;
+}

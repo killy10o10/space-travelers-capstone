@@ -1,0 +1,49 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 4rem;
+  align-items: center;
+  box-shadow: 0 0 5px 0 rgb(96, 92, 92);
+  padding: 8px;
+}
+
+.logo {
+  height: 4rem;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo img {
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+  list-style: none;
+  color: #2166ba;
+}
+
+ul hr {
+  background-color: rgb(215, 210, 210);
+  height: 30px;
+  width: 2px;
+  margin-top: -0.5rem;
+  border: none;
+}
+
+.active-link {
+  text-decoration: underline;
+  color: #138adf;
+}
+
+.link {
+  text-decoration: none;
+}
