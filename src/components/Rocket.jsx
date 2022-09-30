@@ -1,14 +1,18 @@
 /* eslint-disable react/forbid-prop-types */
-import React from 'react';
-import './rocket.css';
-import { useDispatch } from 'react-redux';
-import { bookRocket, leaveRocket } from '../Redux/rockets/Rockets';
+import React from "react";
+import "./rocket.css";
+import { useDispatch } from "react-redux";
+import { bookRocket, leaveRocket } from "../Redux/rockets/Rockets";
 
 export default function Rocket(props) {
   const { rocket } = props;
   const dispatch = useDispatch();
-  const reserveRocket = () => dispatch(bookRocket(rocket.id));
-  const cancelRocket = () => dispatch(leaveRocket(rocket.id));
+  const reserveRocket = () => {
+    dispatch(bookRocket(rocket.id));
+  };
+  const cancelRocket = () => {
+    dispatch(leaveRocket(rocket.id));
+  };
 
   return (
     <section className="rockets-section">
@@ -22,12 +26,20 @@ export default function Rocket(props) {
           {rocket.description}
         </p>
         {!rocket.reserved && (
-          <button className="reserve button" type="button" onClick={() => reserveRocket()}>
+          <button
+            className="reserve button"
+            type="button"
+            onClick={() => reserveRocket()}
+          >
             Reserve Rocket
           </button>
         )}
         {rocket.reserved && (
-          <button className="cancel button" type="button" onClick={() => cancelRocket()}>
+          <button
+            className="cancel button"
+            type="button"
+            onClick={() => cancelRocket()}
+          >
             Cancel Reservation
           </button>
         )}

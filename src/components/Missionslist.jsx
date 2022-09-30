@@ -6,8 +6,8 @@ import Missions from "./Missions";
 import "./missionlist.css";
 
 const Missionslist = () => {
+  const missionArray = useSelector((state) => state.mission);
   const dispatch = useDispatch();
-  const { missionArray } = useSelector((state) => state.mission);
   useEffect(() => {
     if (missionArray.length === 0) dispatch(showMission());
   }, []);
@@ -27,10 +27,7 @@ const Missionslist = () => {
       {missionArray.map((data) => (
         <Missions
           key={uuid()}
-          name={data.mission_name}
-          discription={data.description}
-          id={data.mission_id}
-          reserved={data.reserved !== false}
+          mission={data}
         />
       ))}
     </div>

@@ -1,12 +1,12 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
+import { createAsyncThunk } from "@reduxjs/toolkit";
 /* eslint-disable max-len */
 
-const RETRIEVE_ASYNC_ROCKETS = 'space-travlers/rockets/RETRIEVE_ROCKETS';
-const RETRIEVE_ROCKETS = 'space-travlers/rockets/RETRIEVE_ROCKETS/fulfilled';
-const BOOK_ROCKET = 'space-travlers/rockets/BOOK_ROCKET';
-const LEAVE_ROCKET = 'space-travlers/rockets/LEAVE_ROCKET';
+const RETRIEVE_ASYNC_ROCKETS = "space-travlers/rockets/RETRIEVE_ROCKETS";
+const RETRIEVE_ROCKETS = "space-travlers/rockets/RETRIEVE_ROCKETS/fulfilled";
+const BOOK_ROCKET = "space-travlers/rockets/BOOK_ROCKET";
+const LEAVE_ROCKET = "space-travlers/rockets/LEAVE_ROCKET";
 
-const url = 'https://api.spacexdata.com/v3/rockets';
+const url = "https://api.spacexdata.com/v3/rockets";
 const initialState = [];
 
 export const showRockets = createAsyncThunk(
@@ -19,6 +19,7 @@ export const showRockets = createAsyncThunk(
       name: item.rocket_name,
       description: item.description,
       image: item.flickr_images,
+      reserved: false,
     }));
     return rockets;
   },

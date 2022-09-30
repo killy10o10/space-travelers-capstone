@@ -4,10 +4,9 @@ import { useSelector } from "react-redux";
 
 export default function Myprofile() {
   const reservedRockets = useSelector((state) => state.rocket.filter((item) => item.reserved));
-
-  const { missionArray } = useSelector((state) => state.mission);
-
-  const reservedMission = missionArray.filter((mission) => mission.reserved === !true);
+  console.log(reservedRockets);
+  const reservedMission = useSelector((state) => state.mission).filter((item) => item.reserved);
+  console.log(reservedMission);
 
   return (
     <div className="profile-content">
@@ -23,7 +22,7 @@ export default function Myprofile() {
         <h1 className="heading">My Missions</h1>
         {reservedMission.map((mission) => (
           <ul key={mission.id} className="reserved-table">
-            <li>{mission.mission_name}</li>
+            <li>{mission.name}</li>
           </ul>
         ))}
       </section>

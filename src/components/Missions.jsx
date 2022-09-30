@@ -1,36 +1,34 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import {
-  LeaveMission,
-  showStatus,
-} from "../Redux/mission/Mission";
+import { bookMission, leaveMission } from "../Redux/mission/Mission";
 import "./missions.css";
 
 export default function Missions(props) {
   const dispatch = useDispatch();
+  const { mission } = props;
 
   const handleClick = () => {
-    dispatch(showStatus(props.id));
-    localStorage.setItem("user", JSON.stringify(props));
+    dispatch(bookMission(mission.id));
   };
 
   const handleClickTwo = () => {
-    dispatch(LeaveMission(props.id));
+    dispatch(leaveMission(mission.id));
   };
 
   return (
     <div className="mission-list">
       <div className="list">
         <div className="list-h">
-          <h1>{props.name}</h1>
+          <h1>{mission.name}</h1>
         </div>
         <hr />
         <div className="list-p">
-          <p>{props.discription}</p>
+          <p>{mission.description}</p>
         </div>
         <hr />
         <div className="list-s">
-          {!props.reserved && (
+          {!mission.reserved && <h3>Not a Member</h3>}
+          {mission.reserved && (
             <h3
               style={{
                 backgroundColor: "rgb(19, 138, 223)",
@@ -39,25 +37,24 @@ export default function Missions(props) {
               Active member
             </h3>
           )}
-          {props.reserved && <h3>Not a Member</h3>}
         </div>
         <hr />
-        {!props.reserved && (
+        {!mission.reserved && (
+          <button className="btn" onClick={handleClick} type="button">
+            Join Mission
+          </button>
+        )}
+        {mission.reserved && (
           <button
             style={{
               border: "1px solid red",
               color: "red",
             }}
             className="btn"
-            onClick={handleClick}
+            onClick={handleClickTwo}
             type="button"
           >
             Leave Mission
-          </button>
-        )}
-        {props.reserved && (
-          <button className="btn" onClick={handleClickTwo} type="button">
-            Join Mission
           </button>
         )}
       </div>
