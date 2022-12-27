@@ -1,47 +1,30 @@
 .rockets-section {
-  font-size: 18px;
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: 0.4fr 1fr;
-  margin: 0;
   padding: 10px;
-  background-color: #5c5858;
   width: 94rem;
   overflow: hidden;
 }
 
 .rockets-section img {
-  width: 95rem;
-  height: 40rem;
-  opacity: 0.4;
+  height: 14rem;
 }
 
 .details {
-  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  z-index: 1;
-  width: 80%;
-  align-items: center;
   font-size: 24px;
-  text-align: center;
   margin-left: 8rem;
-  color: azure;
-  line-height: 5rem;
+  line-height: 3rem;
 }
 
 .button {
-  padding: 45px 520px 45px 520px;
+  padding: 12px 10px;
   display: flex;
   align-items: center;
-  border-radius: 5px;
-  color: #fff;
   height: 3.8rem;
   border: none;
-
-  /* width: 100vh; */
-  margin-top: 12rem;
   cursor: pointer;
   font-weight: 300;
   font-size: 1.5rem;
