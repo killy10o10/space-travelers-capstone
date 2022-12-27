@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-- [App Live Link](https://63aa3eebd922a81040fb314a--luxury-longma-c31dca.netlify.app/Rocket)
+- [App Live Link](https://deploy-preview-38--gilded-cucurucho-f6c94c.netlify.app/)
 
 ## Screenshots
 ![Rocket](./src/assets/Rockets.png)
